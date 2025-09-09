@@ -1,5 +1,5 @@
 ---
-# Hiiii
+# Hi
 - name: My First Playbook
   hosts: sapprod
   become: true
