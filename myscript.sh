@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Hiiiiiii there"
+echo "Hi there"
 
 #End
