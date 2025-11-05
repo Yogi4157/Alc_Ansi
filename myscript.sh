@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Hi there"
+echo "Hi there this is retro"
 
 #End
