@@ -1,0 +1,9 @@
+---
+- name: Create a file on localhost
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Create a sample file
+      file:
+        path: /tmp/jenkins-demo-file.txt
+        state: touch
