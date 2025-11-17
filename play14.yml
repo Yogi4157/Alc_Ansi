@@ -1,0 +1,9 @@
+---
+- name: Write a message into a file
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Add message to file
+      copy:
+        dest: /tmp/jenkins_ansible_output.txt
+        content: "This playbook is run from Jenkins!"
