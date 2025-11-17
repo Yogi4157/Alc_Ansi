@@ -1,0 +1,10 @@
+---
+- name: Install tree package
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+    - name: Install tree
+      package:
+        name: tree
+        state: present
