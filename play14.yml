@@ -1,9 +1,12 @@
 ---
-- name: Write a message into a file
+- name: Create a user and add ssh public key to user's authorized keys
   hosts: localhost
-  connection: local
+  become: true
+  remote_user: ansible
   tasks:
-    - name: Add message to file
-      copy:
-        dest: /tmp/jenkins_ansible_output.txt
-        content: "This playbook is run from Jenkins!"
+   - name: Add a user
+     user:
+       name: asianaa
+       password: "{{ 'test123' | password_hash('sha512')}}"
+       state: present 
+...
